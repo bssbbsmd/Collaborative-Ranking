@@ -34,6 +34,7 @@ We provide a python script (util/num2coms.py) that transfers a (user, item, rati
 Users can configures the settings in the config/default.cfg file. Some recommended parameter settings has been shown in that file.
 
 Run the code
+
     ```
     $ ./pairrank
     ```
