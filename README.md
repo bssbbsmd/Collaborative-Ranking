@@ -35,6 +35,6 @@ Users can configures the settings in the config/default.cfg file. Some recommend
 
 Run the code
 
-    ```
+    
     $ ./pairrank
-    ```
+    
