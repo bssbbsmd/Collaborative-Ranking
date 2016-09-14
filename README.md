@@ -17,7 +17,7 @@ We provide a python script (util/num2coms.py) that transfers a (user, item, rati
 
 2. Run util/num2comp.py to get training comparisons and test ratings. 
     ``` 
-    $ python util/num2comps.py data/movielens1m.txt -o ml1m -n 50
+    $ python util/num2comps.py data/movielens1m.txt -o data/ml1m -n 50
     ```   
     "-o" : name of output file, "-n": the number of ratings extracted for each user for training and hence users who has less than n+10 ratings will be removed.  
 
