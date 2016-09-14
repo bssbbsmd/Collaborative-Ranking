@@ -1,0 +1,43 @@
+[prob]
+# regularization parameter
+lambda = 1e2
+
+# weight for squared loss term 
+# WE RECOMMEND TO USE ((gamma=100 if N=10)), ((gamma=1/10 if N=20)), ((gamma=0.1/0.01 if N=50)) (see paper)
+gamma = 0.1
+
+# model rank (for low-rank approximation)
+rank = 100
+
+# algorithm : pairregssgd, pairregsgd, pairssgd
+algorithm = pairregssgd
+
+# the maximum number of outer iterations
+max_outer_iter = 10
+
+# stopping criterion
+tol = 1e-5
+
+# evaluate using test set after each outer iteration? (1 if yes, 0 otherwise) 
+evaluate = true
+
+[input]
+# type : numeric
+type = numeric
+
+# file names for trainig and test sets
+train_file          = data/ml1m/ml1m_train_comps_ratings_50.lsvm
+test_file           = data/ml1m/ml1m_test_ratings_50.lsvm
+
+[par]
+# number of openmp threads
+nthreads = 32
+
+[sgd and pairregsgd]
+# alpha is recommended to use 1e-2 when N=10, and 5e-2 when N=20 and N=50... Or 1e-2 for all
+stepsize_alpha = 1e-2           
+stepsize_beta = 1e-5
+
+SGD = true
+SSGD = true
+
